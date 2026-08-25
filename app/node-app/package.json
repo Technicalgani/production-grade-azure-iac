@@ -1,0 +1,12 @@
+{
+  "name": "azure-nodejs-poc",
+  "version": "1.0.0",
+  "description": "Production-style Node.js application running on AKS",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

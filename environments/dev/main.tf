@@ -40,7 +40,7 @@ module "container_registry" {
 # ---------------------------------------------------------
 # AKS
 # ---------------------------------------------------------
-
+/*
 module "aks" {
   source = "../../modules/aks"
 
@@ -69,4 +69,4 @@ resource "azurerm_role_assignment" "aks_acr_pull" {
   role_definition_name = "AcrPull"
 
   scope = module.container_registry.id
-}
+} */

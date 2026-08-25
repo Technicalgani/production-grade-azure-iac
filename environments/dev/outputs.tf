@@ -22,7 +22,7 @@ output "acr_login_server" {
 
 
 # AKS
-
+/*
 output "aks_name" {
   value = module.aks.name
 }
@@ -30,3 +30,5 @@ output "aks_name" {
 output "aks_id" {
   value = module.aks.id
 }
+
+*/
