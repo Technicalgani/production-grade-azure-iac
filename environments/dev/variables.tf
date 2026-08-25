@@ -1,3 +1,10 @@
+# BUDGET
+variable "budget_alert_email" {
+  description = "Email address for Azure budget alerts"
+  type        = string
+}
+
+# RG
 variable "location" {
   description = "Azure region for the dev environment"
   type        = string
@@ -11,6 +18,13 @@ variable "environment" {
 }
 
 variable "project_name" {
+  description = "Project name"
+  type        = string
+  default     = "azure-iac"
+}
+
+# ACR
+variable "name" {
   description = "Project name"
   type        = string
   default     = "azure-iac"

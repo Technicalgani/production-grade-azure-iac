@@ -1,2 +1,5 @@
-# location     = "centralindia"
-# project_name = "azure-iac"
+project_name       = "azure-iac"
+name               = "azure-iac"
+location           = "centralindia"
+environment        = "dev"
+budget_alert_email = "hanamant.gani92@gmail.com"
