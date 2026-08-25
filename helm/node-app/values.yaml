@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: acrazureiacdev01.azurecr.io/node-app
-  tag: "1.0.0"
+  tag: "1.0.3"
   pullPolicy: IfNotPresent
 
 serviceAccount:

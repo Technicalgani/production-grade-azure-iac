@@ -4,5 +4,3 @@ npm-debug.log
 .gitignore
 Dockerfile
 README.md
-.env
-coverage
