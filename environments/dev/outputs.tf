@@ -19,3 +19,14 @@ output "acr_login_server" {
   description = "ACR login server"
   value       = module.container_registry.login_server
 }
+
+
+# AKS
+
+output "aks_name" {
+  value = module.aks.name
+}
+
+output "aks_id" {
+  value = module.aks.id
+}
