@@ -6,6 +6,8 @@ resource "azurerm_kubernetes_cluster" "this" {
 
   dns_prefix = var.name
 
+
+
   sku_tier = "Free"
 
   kubernetes_version = var.kubernetes_version
@@ -15,22 +17,14 @@ resource "azurerm_kubernetes_cluster" "this" {
   }
 
   default_node_pool {
-
-    name = "system"
-
-    vm_size = var.vm_size
-
-    node_count = 1
-
-    type = "VirtualMachineScaleSets"
-
-    only_critical_addons_enabled = true
-
-    os_disk_size_gb = 30
-
-    # upgrade_settings {
-    #   max_surge = "0"
-    # }
+    name                         = "system"
+    vm_size                      = "Standard_B2s_v2"
+    node_count                   = 1
+    only_critical_addons_enabled = false
+    temporary_name_for_rotation  = "systemtmp"
+    upgrade_settings {
+      max_surge = "1"
+    }
   }
 
   network_profile {
